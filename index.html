@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<link rel="stylesheet" type="text/css" href="leaguestyle.css">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.5" />
+		  	<title>Choose your lane</title>
+		  	<meta charset="utf-8">
+		</head>
+		<body onload="mode(),keybind()">
+				<div id="navin" class="navbar">
+						<span class="navop">
+							<a id="colormode" onclick="changemode(),canvastext(),canvasmeter(),drawtable()"></a>
+						</span>
+						<span class="navop">
+							<a id="clearHS" onclick="clearHS()">Clear Highest Roll</a>
+						</span>
+						<span class="navop">
+							<a id="gopage2" href="../Page2/index.html">CSS Page</a>
+						</span>
+				</div>
+				<div class="everything">
+						<div class="title">
+								<h1>Choose your lane</h1>
+						</div>
+						<div class="btn">
+								<button onclick="makeTbl(),show(1),canvastext(),canvasmeter()">Show Result</button>
+						</div>
+						<div id="graph">
+								<canvas id="canvas" width="300" height="250"></canvas>
+						</div>
+						<div id="biglane">
+							<h2 id="winner"></h2>
+							<p id="highscore"></p>
+							<p id="counter"></p>
+						</div>
+						<div class="btn" >
+								<button id="btn2" style="display: none" onclick="show(2)"></button>
+						</div>
+						<div id="content" style="display: none">
+						</div>
+				</div>
+				<script src="league.js"></script>
+				<script src="canvas.js"></script>
+	  </body>
+</html>

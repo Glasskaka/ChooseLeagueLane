@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.everything{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 0 auto;
+}
+h1, p {
+text-align: center;
+}
+
+table td{
+  text-align: center;
+  padding:5px;
+}
+table {
+    border-collapse: collapse;
+}
+
+.nightmode {
+  background-color: #3a3d42;
+  color: white;
+  border: white;
+
+}
+
+.daymode {
+  background-color: #F8C3EC;
+  text: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 60px;
+  align-items: center;
+}
+
+.navop:hover {
+  transition: 1s;
+  background-color: black;
+  cursor: pointer;
+}
+
+.navbar a {
+  padding: 10px 30px;
+  color: white;
+  font-size: 22px;
+	text-decoration: none;
+}
+
+.border{
+  border-radius: 10%;
+  border: 3px solid black;
+}
+
+.btn {
+  margin-bottom: 6px;
+}
+
+button {
+    cursor: pointer;
+}
